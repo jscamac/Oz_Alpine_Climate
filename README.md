@@ -112,8 +112,8 @@ New Microstation and Temperature logger data can readily be added to existing co
 ```
 
 new_micro <- import_newmicrodata(microstation_data = readRDS("Microstations/Microstations.rds"),
-								 new_data = "Microstations/raw_data/new_directory/",
-								 meta_data_path = "Microstations/meta_data/microstation_metadata.csv")
+				 new_data = "Microstations/raw_data/new_directory/",
+				 meta_data_path = "Microstations/meta_data/microstation_metadata.csv")
 ```
 
 Here `"Microstations/raw_data/new_directory/"` is the path to the directory containing .csv files from the HOBO loggers. Please ensure the filenames are consistent (e.g. ITEX2.0_5CTL.csv).
@@ -131,8 +131,8 @@ saveRDS(new_micro, "Microstations/Microstations.rds")
 dat <- readRDS("microstations/microstation_data_May19.rds")
 
 new_micro <- import_newmicrodata(temperature_data = readRDS("Temp_loggers/TempLogger.rds"),
-								 new_data = "Temp_logger/raw_data/new_directory/",
-								 meta_data_path = "Temp_logger/meta_data/TempLogger_meta.csv")
+				 new_data = "Temp_logger/raw_data/new_directory/",
+				 meta_data_path = "Temp_logger/meta_data/TempLogger_meta.csv")
 ```
 
 Here `"Temp_logger/raw_data/new_directory/"` is the path to the directory containing .csv files from the HOBO loggers. Please ensure the filenames are consistent (e.g. ITEX1U_10_OTC.csv).
