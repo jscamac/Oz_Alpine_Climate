@@ -108,6 +108,21 @@ micro_clean <- clean_microclimate(rds_file_path = "Microstations/Microstations.r
 
 New Microstation and Temperature logger data can readily be added to existing compiled .rds files using the following code:
 
+### New temperature logger data
+
+```
+new_temp <- import_newtempdata(temperature_data = readRDS("Temp_loggers/TempLogger.rds"),
+			       new_data = "Temp_logger/raw_data/new_directory/",
+			       meta_data_path = "Temp_logger/meta_data/TempLogger_meta.csv")
+```
+
+Here `"Temp_logger/raw_data/new_directory/"` is the path to the directory containing .csv files from the HOBO loggers. Please ensure the filenames are consistent (e.g. ITEX1U_10_OTC.csv).
+
+
+If you are happy with the compilation, the existing .rds file can be overwritten using:
+```
+saveRDS(new_micro, "Temp_loggers/TempLogger.rds")
+```
 
 ### New weather stations data
 
@@ -125,24 +140,3 @@ If you are happy with the compilation, the existing .rds file can be overwritten
 ```
 saveRDS(new_micro, "Microstations/Microstations.rds")
 ```
-
-
-### New temperature logger data
-
-```
-dat <- readRDS("microstations/microstation_data_May19.rds")
-
-new_micro <- import_newmicrodata(temperature_data = readRDS("Temp_loggers/TempLogger.rds"),
-				 new_data = "Temp_logger/raw_data/new_directory/",
-				 meta_data_path = "Temp_logger/meta_data/TempLogger_meta.csv")
-```
-
-Here `"Temp_logger/raw_data/new_directory/"` is the path to the directory containing .csv files from the HOBO loggers. Please ensure the filenames are consistent (e.g. ITEX1U_10_OTC.csv).
-
-
-If you are happy with the compilation, the existing .rds file can be overwritten using:
-```
-saveRDS(new_micro, "Temp_loggers/TempLogger.rds")
-```
-
-
