@@ -1,0 +1,55 @@
+2004
+TEMP/RH - 699195
+
+
+TEMP(15) - 684636
+
+
+
+
+
+
+NOTES:
+Wind sensors broke on the 29/10/2004 and were not replaced until the 10/03/2005.
+Wind direction was not replaced.
+
+Temperature/Relative humidity sensor must have died after 8/2/2006 and was replaced with a standard temperature sensor until 20/10/06
+
+Major sensor failure in between 25/10/2007 and 11/04/2008 (lost temp 15, ambient temp, rh,dew point and surface temp, temp5).
+Managed to get surface temp, ambient,rh and dew point working on the 31/05/2008. But temp15 and temp 5 still down and wind speed was also down from this date.
+Temp10 also stopped working post 12/06/2008.
+
+Wind speed returned on the 21/01/2009
+
+
+Additional sensors were lost between 12/06/2008 (Temp10)
+
+Soil moisture first added on the 19/02/2009
+
+Weather station was knocked down on at 1 am on the 18/02/2012
+
+Was reset up on thr 31/05/2012
+
+
+
+MISSING Weather station data between 19/10/2013 and 29/05/2014
+
+GAPS
+Seems to be a gap between 29/05/2005 and 5/11/2005
+
+Seems to be a gap between 8/2/2006 and 1/10/2006
+
+Seems to be a gap between 26/02/2007 and 5/03/2007
+
+Gap between 30/04/2007 and 4/10/2007
+
+Gap between 11/10/2007 and 14/10/2007
+
+Gap between 25/10/2007 and 11/04/2008
+
+Gap between 12/06/2008 and 24/10/2008
+
+Gap between 30/10/2008 and 21/01/2009
+Gap between 5/02/2009 and 19/02/2009
+Gap between 18/04/2009 and 26/11/2009
+
