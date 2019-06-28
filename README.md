@@ -73,6 +73,8 @@ library(lubridate)
 
 Depending on the data you wish to clean the following code can be run:
 
+**Note** Cleaned data will be returned as sensor names with a C before their name (e.g. CTemp_Ambient)
+
 ### Clean weather station data
 
 ```
