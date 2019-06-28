@@ -105,8 +105,10 @@ micro_clean <- clean_microclimate(rds_file_path = "Microstations/Microstations.r
 
 
 ## Incorporating new data
+**Note** Due to replacement of weather station, I have not currently written an import function for this data, as how this will be done is dependent on set up.
 
 New Microstation and Temperature logger data can readily be added to existing compiled .rds files using the following code:
+
 
 ### New temperature logger data
 
@@ -124,7 +126,7 @@ If you are happy with the compilation, the existing .rds file can be overwritten
 saveRDS(new_micro, "Temp_loggers/TempLogger.rds")
 ```
 
-### New weather stations data
+### New Microstation data
 
 ```
 
